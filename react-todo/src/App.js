@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {Data} from './Components/list.js';
+import {Data} from './components/list.js';
 
 function App() {
   return (
@@ -15,8 +15,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-      {/* <p> <ComplexList/> </p> */}
-       <p> <Data/> </p>
+       <div> <Data/> </div>
     </div>
   );
 }
