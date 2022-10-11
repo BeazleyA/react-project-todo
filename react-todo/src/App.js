@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import {Data} from './components/list.js';
+import TodoList from './components/TodoList';
 
 function App() {
   return (
@@ -15,7 +14,7 @@ function App() {
           rel="noopener noreferrer"
         >
         </a>
-       <div> <Data/> </div>
+       <div> <TodoList/> </div>
     </div>
   );
 }
