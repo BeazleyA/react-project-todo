@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import TodoForm from "./TodoForm";
-import Todolist from "./TodoList";
 import {AiOutlineCloseCircle, AiFillEdit} from 'react-icons/ai'
 
 function Todo({todos, completeTodo}) {
@@ -14,8 +12,9 @@ function Todo({todos, completeTodo}) {
       className={todo.isComplete ? "todo-row complete" : "todo-row"}
       key={index}
     >
-      <div key={todo.id} onClick={() => completeTodo(todo.id)}></div>
+      <div key={todo.id} onClick={() => completeTodo(todo.id)}>
       {todo.text}
+      </div>
       <div className='icons'>
         <AiOutlineCloseCircle/>
         <AiFillEdit/>
