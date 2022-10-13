@@ -42,7 +42,7 @@ function TodoForm(props) {
       ) : (
         <>
           <input
-            placeholder='Add a todo'
+            placeholder='Add a task'
             value={input}
             onChange={handleChange}
             name='text'
