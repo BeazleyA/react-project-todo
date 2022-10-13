@@ -17,17 +17,6 @@ export const TodoForm = (props) => {
 
   return (
     <div>
-      <ul>
-        {datalist.map((item) => (
-          <li key={item.id}>
-            <div>{item.id}</div>
-            <div>{item.firstname}</div>
-            <div>{item.lastname}</div>
-            <div>{item.year}</div>
-          </li>
-        ))}
-      </ul>
-
       <form onSubmit={handleSubmit}>
         <input
           type="text"
